@@ -65,3 +65,24 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
 
 5. **리스트 초기화**
    - `CDLL_DestroyNode(Node* node)`로 노드를 제거하고 메모리를 해제
+   
+---
+
+### ArrayStack (배열 기반 스택) - C 구현
+
+1. **스택 생성 및 초기화**
+   - `ArrayStack` 구조체는 `Capacity`, `Top`, `Nodes` 배열을 통해 스택을 정의
+   - `AS_CreateStack(ArrayStack** Stack, int Capacity)`로 주어진 용량으로 스택 초기화
+
+2. **스택 데이터 추가 및 제거**
+   - `AS_Push(ArrayStack* Stack, ElementType Data)`로 스택의 상단에 데이터 추가
+   - `AS_Pop(ArrayStack* Stack)`로 상단 데이터 제거 후 반환
+
+3. **스택 상단 데이터 확인 및 상태 체크**
+   - `AS_Top(ArrayStack* Stack)`으로 최상위 데이터 확인
+   - `AS_GetSize(ArrayStack* Stack)`로 스택 크기 확인
+   - `AS_IsEmpty(ArrayStack* Stack)`으로 스택 비어있는지 확인
+
+4. **스택 해제**
+   - `AS_DestroyStack(ArrayStack* Stack)`로 메모리 해제
+
