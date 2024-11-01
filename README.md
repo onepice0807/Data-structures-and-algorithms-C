@@ -160,3 +160,21 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
    - `LQ_DestroyQueue`로 큐와 저장된 노드를 메모리에서 해제
    
 ---
+
+### LCRS Tree (좌측 자식, 우측 형제 트리) - C 구현
+
+1. **LCRS 트리 구조**
+   - `LCRSNode` 구조체는 `LeftChild`와 `RightSilbling` 포인터로 트리를 정의
+   - `Data` 필드로 각 노드에 저장된 데이터를 나타냄
+
+2. **트리 생성 및 소멸 함수**
+   - `LCRS_CreateNode`로 노드를 생성, `LCRS_DestroyTree`로 트리 전체 소멸
+
+3. **노드 추가 및 출력**
+   - `LCRS_AddChildNode`로 부모 노드에 자식 노드 추가
+   - `LCRS_PrintTree`로 트리를 들여쓰기 형태로 출력하여 구조 시각화
+
+4. **트리 해제**
+   - `LCRS_DestroyTree`로 트리와 저장된 노드를 메모리에서 해제
+
+---
