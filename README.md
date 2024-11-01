@@ -106,3 +106,23 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
 4. **스택 해제**
    - `LLS_DestroyStack(LinkedListStack* Stack)`로 메모리 해제
 
+---
+
+### LinkedListStack 기반 계산기 프로그램 - C 구현
+
+1. **LinkedListStack 구조**
+   - `Node` 구조체는 문자열 데이터를 저장하고 `NextNode`로 다음 노드를 참조
+   - `LinkedListStack` 구조체는 `List`와 `Top` 포인터로 스택 정의
+
+2. **스택 연산 함수**
+   - `LLS_Push`로 스택에 데이터 추가, `LLS_Pop`로 데이터 제거, `LLS_Top`으로 최상단 데이터 확인
+
+3. **중위 표현식 변환 및 계산**
+   - `GetPostfix`로 중위 표현식을 후위 표현식으로 변환
+   - `Calculate`로 후위 표현식을 계산하여 최종 결과 반환
+
+4. **유틸리티 함수**
+   - `IsNumber`, `GetNextToken`, `IsPrior` 등의 함수로 토큰 판별 및 우선순위 비교
+
+---
+
