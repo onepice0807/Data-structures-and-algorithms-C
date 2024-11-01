@@ -86,3 +86,23 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
 4. **스택 해제**
    - `AS_DestroyStack(ArrayStack* Stack)`로 메모리 해제
 
+---
+
+### LinkedListStack (연결 리스트 스택) - C 구현
+
+1. **스택 생성 및 초기화**
+   - `LinkedListStack` 구조체는 `Count`, `List`, `Top` 필드를 통해 스택을 정의
+   - `LLS_CreateStack(LinkedListStack** Stack)`으로 스택 초기화
+
+2. **스택 데이터 추가 및 제거**
+   - `LLS_Push(LinkedListStack* Stack, Node* NewNode)`로 스택의 상단에 데이터 추가
+   - `LLS_Pop(LinkedListStack* Stack)`으로 상단 데이터 제거 후 반환
+
+3. **스택 상단 데이터 확인 및 상태 체크**
+   - `LLS_Top(LinkedListStack* Stack)`으로 최상위 데이터 확인
+   - `LLS_GetSize(LinkedListStack* Stack)`으로 스택 크기 확인
+   - `LLS_IsEmpty(LinkedListStack* Stack)`으로 스택이 비어있는지 확인
+
+4. **스택 해제**
+   - `LLS_DestroyStack(LinkedListStack* Stack)`로 메모리 해제
+
