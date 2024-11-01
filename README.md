@@ -193,3 +193,21 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
 
 4. **트리 해제**
    - `SBT_DestroyTree`로 트리와 저장된 노드를 메모리에서 해제
+
+---
+
+### ExpressionTree (수식 트리) - C 구현
+
+1. **수식 트리 구조**
+   - `ETNode` 구조체는 `Left`, `Right` 포인터로 자식 노드를 연결
+   - `Data` 필드로 연산자 또는 피연산자를 저장하여 수식 트리를 구성
+
+2. **트리 생성 및 소멸 함수**
+   - `ET_CreateNode`로 노드를 생성, `ET_DestroyTree`로 트리 전체 소멸
+
+3. **수식 트리 순회 및 출력**
+   - `ET_PreorderPrintTree`, `ET_InorderPrintTree`, `ET_PostorderPrintTree`로 전위, 중위, 후위 순회 출력
+
+4. **수식 트리 생성 및 평가**
+   - `ET_BuildExpressionTree`로 후위 표기식에서 트리 생성, `ET_Evaluate`로 수식 평가
+
