@@ -126,3 +126,21 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
 
 ---
 
+### CircularQueue (원형 큐) - C 구현
+
+1. **큐 생성 및 초기화**
+   - `CircularQueue` 구조체는 `Capacity`, `Front`, `Rear`와 `Nodes` 배열로 큐를 정의
+   - `CQ_CreateQueue` 함수로 지정된 용량의 큐를 생성하고 초기화
+
+2. **큐 데이터 추가 및 제거**
+   - `CQ_Enqueue`로 큐의 끝에 데이터 추가, `CQ_Dequeue`로 큐의 앞에서 데이터 제거
+
+3. **큐 상태 확인**
+   - `CQ_GetSize`로 현재 큐의 크기 확인
+   - `CQ_IsEmpty`로 큐가 비어있는지, `CQ_IsFull`로 큐가 가득 찼는지 확인
+
+4. **큐 해제**
+   - `CQ_DestroyQueue`로 큐와 저장된 노드를 메모리에서 해제
+
+---
+
