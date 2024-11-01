@@ -178,3 +178,18 @@ C언어를 통한 자료구조 및 알고리즘 공부내용 정리
    - `LCRS_DestroyTree`로 트리와 저장된 노드를 메모리에서 해제
 
 ---
+
+### BinaryTree (이진 트리) - C 구현
+
+1. **이진 트리 구조**
+   - `SBTNode` 구조체는 `Left`, `Right` 포인터로 자식 노드를 연결
+   - `Data` 필드로 각 노드의 데이터를 저장
+
+2. **트리 생성 및 소멸 함수**
+   - `SBT_CreateNode`로 노드를 생성하고, `SBT_DestroyTree`로 트리 전체를 소멸
+
+3. **트리 순회 및 출력**
+   - `SBT_PreorderPrintTree`, `SBT_InorderPrintTree`, `SBT_PostorderPrintTree`로 전위, 중위, 후위 순회로 출력
+
+4. **트리 해제**
+   - `SBT_DestroyTree`로 트리와 저장된 노드를 메모리에서 해제
